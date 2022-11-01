@@ -1,8 +1,10 @@
-import { useState } from 'react'
+import React from 'react'
 
-import { Header } from './components/Header'
+import { Header } from './components/Header/Header'
+import { SearchBar } from './components/Search-Bar/SearchBar'
 import { Content } from './styles/App.style'
 import { GlobalStyle } from './styles/Global'
+
 
 function App() {
 
@@ -11,7 +13,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Content>
-        
+        <SearchBar/>
       </Content>
     </>
   )

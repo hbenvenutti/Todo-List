@@ -1,7 +1,7 @@
 import React from 'react';
 import { Component } from './styles';
 
-import logo from '../assets/logo.svg'
+import logo from '../../assets/logo.svg'
 
 export const Header = () => {
   return (
