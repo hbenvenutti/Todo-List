@@ -27,7 +27,6 @@ export const Component = styled.div`
     color: var(--gray-200);
     font-weight: 700;
     font-size: 0.75rem;
-    /* padding: 0.0625rem; */
     padding: 0.125rem 0.5rem;
     min-width: 1.5625rem;
     height: 1.1875rem;
