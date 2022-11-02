@@ -17,10 +17,6 @@ export const Component = styled.form`
     color: var(--gray-100);
   }
 
-  input::placeholder {
-    color: var(--gray-300);
-  }
-
   button {
     display: flex;
     gap: 0.5rem;

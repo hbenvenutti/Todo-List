@@ -1,11 +1,9 @@
+import { useTodos } from "../../hooks/useTodos";
 import { Component } from "./styles"
 
-interface TodoCounterProps {
-  todoCounter: number;
-  doneCounter: number;
-}
+export const TodoCounter = () => {
+  const {todoCounter, doneCounter} = useTodos();
 
-export const TodoCounter = ({todoCounter, doneCounter}: TodoCounterProps) => {
   return (
     <Component>
       <div className="created">

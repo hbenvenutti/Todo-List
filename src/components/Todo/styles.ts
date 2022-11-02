@@ -24,7 +24,7 @@ export const Component = styled.div<CustomProps>`
     color: ${props => props.done ? css`var(--gray-300)` : css`var(--gray-100);`};
 
     width: 632px;
-    text-decoration: ${props => props.done && css`line-through`};
+    text-decoration: ${props => props.done && 'line-through'};
   }
 
   svg {
@@ -40,13 +40,14 @@ export const Component = styled.div<CustomProps>`
   }
 
   .trash {
+    display: flex;
     background: transparent;
     border: 0;
   }
 
   .radio {
     border: 2px solid ${props => props.done ? css`var(--purple-600)` : css`var(--blue-500)`};
-    background: ${props => props.done ? css`var(--purple-600)` : css`transparent`};
+    background: ${props => props.done ? css`var(--purple-600)` : 'transparent'};
     border-radius: 100%;
     width: 1.5625rem;
     height: 1.5625rem;

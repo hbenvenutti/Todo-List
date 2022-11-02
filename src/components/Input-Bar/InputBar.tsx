@@ -1,17 +1,12 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import {BsPlusCircle} from 'react-icons/bs';
-import { TodoInterface } from '../../App';
 
+import { useTodos } from '../../hooks/useTodos';
 import { Component } from "./styles";
 
-interface InputBarProps {
-  todos: TodoInterface[];
-  todoCounter: number;
-  setTodos: (todo: TodoInterface[]) => void;
-  setTodoCounter: (counter: number) => void;
-}
 
-export const InputBar = ({todos, todoCounter, setTodos, setTodoCounter}: InputBarProps) => {
+export const InputBar = () => {
+  const {todos, todoCounter, setTodos, setTodoCounter} = useTodos()
   const [idCounter, setIdCounter] = useState(0);
   const [text, setText] = useState('');
   
