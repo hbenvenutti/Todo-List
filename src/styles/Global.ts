@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     --purple-500: #8284FA;
     --purple-600: #5E60CE;
     
-    --blue-400: #4EA8DE;
+    --blue-500: #4EA8DE;
     --blue-600: #1E6F9F;
 
     --red-500: #E25858;
@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font-family: 'Exo', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 1rem;
   }
