@@ -14,6 +14,10 @@ export const Component = styled.form`
     background: var(--gray-500);
     border: solid 1px var(--gray-700);
     padding: 1rem;
+    color: var(--gray-100);
+  }
+
+  input::placeholder {
     color: var(--gray-300);
   }
 
